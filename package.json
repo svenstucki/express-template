@@ -1,0 +1,19 @@
+{
+  "name": "<TODO:insert name>",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "DEBUG=* node --use_strict --es_staging ./www",
+    "debug": "DEBUG=* node --debug --use_strict --es_staging ./www"
+  },
+  "author": "",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "express": "^4.13.4",
+    "html": "0.0.10",
+    "mongoose": "^4.3.6",
+    "nunjucks": "^2.3.0"
+  }
+}
