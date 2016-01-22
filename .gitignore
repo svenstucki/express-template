@@ -1,0 +1,14 @@
+# logs
+*.log
+
+# vim swap files
+*.swo
+*.swp
+
+# compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# dependency directories
+node_modules/
+bower_components/
+public/assets/libs
