@@ -1,5 +1,6 @@
 // express
 var express = require('express');
+var bodyParser = require('body-parser');
 
 // dependencies
 var debug = require('debug');
@@ -52,6 +53,10 @@ app.use(function (req, res, next) {
   });
   return next();
 });
+
+// parse x-www-form-urlencoded and JSON request bodies
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 // set MIME type of API requests
 app.use('/api', function (req, res, next) {
